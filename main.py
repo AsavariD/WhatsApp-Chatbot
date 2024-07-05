@@ -1,14 +1,17 @@
 # Imports
 import openai
+import os
 from fastapi import FastAPI, Form, Depends, Request
-from decouple import config
 from utils import send_message
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # creating FastAPI application
 app = FastAPI()
 
 # Configuring OpenAI API
-openai.api_key = config("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 conversation_histories = {}
 
