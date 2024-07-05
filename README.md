@@ -1,4 +1,4 @@
-# WhatsApp Bot using Twilio and OpenAI
+# WhatsApp Chatbot using Twilio and OpenAI
 
 **Installation Libraries**: `python`, `twilio`, `openai`, `pyngrok`, `uvicorn`, `fastapi`, `python-decouple`, `python-multipart`
 
